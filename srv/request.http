@@ -1,0 +1,20 @@
+@server = http://localhost:4004
+
+### GET.fourth-cap.Pmh3OdLlarsnacionalitat
+GET  {{server}}/odata/v4/fourth-cap/Pmh3OdLlarsnacionalitat
+
+### POST.fourth-cap.Pmh3OdLlarsnacionalitat
+POST {{server}}/odata/v4/fourth-cap/Pmh3OdLlarsnacionalitat
+Content-Type : application/json; charset=utf-8 
+
+{
+    "NomesNacionals"  : 999,
+    "Districte"       : 3,
+    "NomesEstrangers" : 999,
+    "Sector"          : "SANT JULIÀ",
+    "Mixtes"          : 999,
+    "DataOficial"     : "2024/11/11"
+}
+
+### GET.fourth-cap.LlarsnacionalitatFilt
+GET  {{server}}/odata/v4/fourth-cap/LlarsnacionalitatFilt?$filter=Sector eq 'CONCÒRDIA'
